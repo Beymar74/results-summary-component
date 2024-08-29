@@ -16,47 +16,45 @@
     <title>Frontend Mentor | Results summary component</title>
   </head>
   <body>
-    <div class="container">
-      <div class="score-section">
-        <h2 class="transparent title">Your Result</h2>
-        <div class="score-circle">
-          <h1 class="score">76</h1>
-          <p class="transparent">of 100</p>
+    <main>
+      <section class="result">
+        <h1>Your Result</h1>
+        <div class="result-score">
+          <p class="result-score-first">76</p>
+          <p class="result-score-second">of 100</p>
         </div>
-        <h1 class="margin-bottom">Great</h1>
-        <p class="transparent">
-          You scored higher than 65% of the people who have taken these tests.
-        </p>
-      </div>
-
-      <div class="summary">
-        <h3>Summary</h3>
-        <div class="reaction">
-            <div class="seperate">
-            <img src="icon-reaction.svg" alt="">
-            <p class="title">Reaction</p></div>
-            <p style="color: gray;"> <span style="color:black;">80</span>/100</p>
+        <h2>Great</h2>
+        <p class="result-text">You scored higher than 65% of the people who have taken these tests.</p>
+      </section>
+  
+      <section class="summary">
+        <h1>Summary</h1>
+        <div class="summary-score" >
+          <div class="summary-score-item" id="reaction">
+            <img src="assets/images/icon-reaction.svg" alt="">
+            <h2>Reaction</h2>
+            <p>80 <span>/ 100</span></p>
+          </div>
+          <div class="summary-score-item" id="memory">
+            <img src="assets/images/icon-memory.svg" alt="">
+            <h2>Memory</h2>
+            <p>92 <span>/ 100</span></p>
+          </div>
+          <div class="summary-score-item" id="verbal">
+            <img src="assets/images/icon-verbal.svg" alt="">
+            <h2>Verbal</h2>
+            <p>61 <span>/ 100</span></p>
+          </div>
+          <div class="summary-score-item" id="visual">
+            <img src="assets/images/icon-visual.svg" alt="">
+            <h2>Visual</h2>
+            <p>72 <span>/ 100</span></p>
+          </div>
+          <button>
+            <a href="#">Continue</a>
+          </button>
         </div>
-        <div class="memory">
-            <div class="seperate">
-            <img src="icon-memory.svg" alt="">
-            <p class="title">Memory</p></div>
-            <p style="color: gray;"><span style="color:black;">92</span>/100</p>
-        </div>
-        <div class="verbal">
-            <div class="seperate">
-            <img src="icon-verbal.svg" alt="">
-            <p class="title">Verbal</p></div>
-            <p style="color: gray;"><span style="color:black;">61</span>/100</p>
-        </div>
-        <div class="visual">
-            <div class="seperate">
-            <img src="icon-visual.svg" alt="">
-            <p class="title">Visual</p> </div>
-            <p style="color: gray;"><span style="color:black;">72</span>/100</p>
-        </div>
-        
-            <button class="continueButton"> Continue </button>
-    </div>
-  </body>
+      </section>
+    </main>
+</body>
 </html>
